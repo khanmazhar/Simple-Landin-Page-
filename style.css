@@ -1,0 +1,256 @@
+/*Global*/
+body {
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font: 18px/ 1.5em 'Questrial', sans-serif; ;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+/*Global Ends*/
+
+/*header*/
+header {
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+header .container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #191A1A;
+    color: #fff;
+    text-align: center;
+    height: 100px;
+    box-shadow: 0 2px 3px 0 #000;
+    position: fixed;
+    z-index: 22;
+}
+.container .flex {
+    width: calc(100%/3);
+}
+/*Workout Lounge CSS*/
+.container .title h1 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.container #lounge {
+    color: #ff00a5;
+    font-family: 'Lobster', cursive;
+}
+
+/*LOGO CSS*/
+.container #img {  
+    animation: rotation 7s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/*Navigation CSS*/
+.container ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.container li {
+    list-style: none;
+    color: #fff;
+}
+.container li:hover {
+    font-weight: bold;
+}
+.container #navigation #current {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ff00a5;
+    transition: color 0.4s ease 0.1s;
+}
+.container #navigation #current:hover {
+    color: #fff;
+}
+/*Header Ends*/
+/*---------------------------------------------------*/
+
+/*Main Section CSS*/
+main {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+/*Main Section CSS ends*/
+
+/*Showcase CSS starts*/
+#showcase {
+    min-height: 500px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+    box-shadow: 0 1px 1px 0 grey;
+  }
+#showcase #showcase-img {
+    background:url('./img/showcase.jpg');
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
+    text-align: center;
+}
+#showcase #content-wrap {
+  width: 70%;
+  margin: auto ;
+  margin-top: 10%;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+#showcase form legend {
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#showcase form fieldset {
+  border: 5px;
+  border-style: inset;
+  border-color: #00000080;
+}
+#showcase form fieldset p {
+  margin: 40px;
+  font-size: 1.2em;
+}
+.btn {
+  padding: 1em 2em;
+  border: none;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+  text-transform:uppercase;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  transition: all 300ms cubic-bezier(0.65, 0.62, 0.85, 0.85);
+}
+.btn:hover {
+  color: #333;
+  background-color: #fff;
+  cursor: pointer;
+}
+/*Showcase CSS Ends*/
+
+/*Features CSS Starts*/
+#features {
+  position: relative;
+  top: 650px;
+  margin: 0;
+  padding: 0;
+}
+#features h1 {
+  text-align: center;
+  font-size: 2.4em;
+  color: #000;
+  margin: auto;
+  padding-bottom:40px;
+}
+#features #content-wrap ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 400px;
+  justify-content: space-around;
+  /*align-items: center;*/
+}
+#features #content-wrap li {
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 31%;
+  border: 1px solid #333;
+  box-shadow: 0 2px 2px #333;
+  transition: transform 200ms linear 0.2s;
+}
+#features #content-wrap li:hover {
+    transform: scale(1.01);
+}
+#features #content-wrap li img {
+  width: 100%;
+  height: auto;
+}
+/*Features CSS Ends*/
+
+/*Contact CSS starts*/
+#contact {
+    position: relative;
+    top: 700px;
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    min-height: 200px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 2px 2px 0 #333, 0 -2px 2px #333;
+}
+#contact #content-wrap {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+#contact input[type=email] {
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+    min-height: 35px;
+    width: 250px;
+    border: none;
+}
+/*Contact CSS Ends*/
+
+/*Footer CSS Starts*/
+footer {
+  display: block;
+  position: relative;
+  top: 760px;
+  background-color: #000;
+  color: #fff;
+  height: 110px;
+  box-shadow: 0 -2px 2px 0 #333;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 30px;
+  float: left;
+}
+footer li {
+  display: inline;
+  padding: 15px; 
+}
+footer #copyright {
+  display: inline;
+  float: right;
+  padding-top: 10px;
+  padding-right: 30px;
+  font-size: 1.2em;
+}
+/*Footer Css Ends*/
